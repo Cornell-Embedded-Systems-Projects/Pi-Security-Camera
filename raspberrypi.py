@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from gpiozero import MotionSensor
 from picamera import Picamera
 
