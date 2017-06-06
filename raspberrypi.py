@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 from gpiozero import MotionSensor
 from picamera import Picamera
+from datetime import datetime
 
 pir = MotionSensor(4)
 camera = PiCamera()
