@@ -2,6 +2,7 @@
 from gpiozero import MotionSensor
 from picamera import Picamera
 from datetime import datetime
+from time import time
 
 pir = MotionSensor(4)
 camera = PiCamera()
@@ -11,6 +12,7 @@ while True:
     filename = datetime.now().strftime("%Y-%m-%d_%H.%M.%S.h264")
     camera.start_recording(filename)
     pir.wait_for_no_motion()
+    time.sleep(7)
     camera.stop_recording()
 
     
