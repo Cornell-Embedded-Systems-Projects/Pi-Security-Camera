@@ -2,7 +2,7 @@
 from gpiozero import MotionSensor
 from picamera import Picamera
 from datetime import datetime
-from time import time
+import time
 
 pir = MotionSensor(4)
 camera = PiCamera()
